@@ -33,3 +33,17 @@ yarn commit
 参考 [优雅的提交你的 Git Commit Message](https://juejin.im/post/5afc5242f265da0b7f44bee4)
 
 结合 `husky` 提交代码格式化代码，`@commitlint/cli`、`commitlint-config-cz` 配合 `git-cz` 触发 `husky`。
+
+## 更新日志
+
+[点击查看](./CHANGELOG.md)
+
+由 `conventional-changelog-cli` 自动生成，版本更新需要手动修改 `package.json` 的 `version` 值。
+
+```
+npm run changelog
+
+yarn changelog
+```
+
+> 如果是工具库的日志，可以尝试 `standard-version`。
