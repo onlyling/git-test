@@ -1,6 +1,6 @@
 {
   "name": "git-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -45,7 +45,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,css,scss,less,ts,tsx,md}": [
+    "*.{yml,yaml,css,scss,less,md}": [
       "prettier --write",
       "git add"
     ],
