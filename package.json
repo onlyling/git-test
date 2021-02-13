@@ -10,6 +10,7 @@
     "precommit": "lint-staged",
     "commit": "npx git-cz",
     "release": "standard-version",
+    "release:first": "standard-version --first-release",
     "release:major:pre": "standard-version --release-as major --prerelease rc --skip.changelog=true --skip.tag=true",
     "release:major": "standard-version --release-as major",
     "release:minor:pre": "standard-version --release-as minor --prerelease rc --skip.changelog=true --skip.tag=true",
