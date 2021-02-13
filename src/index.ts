@@ -9,3 +9,7 @@ console.log(text1);
 const text2 = 'ccc';
 
 console.log(text2);
+
+const version = '0.1.1';
+
+console.log(version);
