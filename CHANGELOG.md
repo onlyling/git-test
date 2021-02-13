@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/onlyling/git-test/compare/v0.1.9...v0.1.10) (2021-02-13)
+
+
+### Features
+
+* **lib:** index ([0d63ad8](https://github.com/onlyling/git-test/commit/0d63ad883a58e49ba9115bc653c96ebe9261ad5f))
+
 ### [0.1.9](https://github.com/onlyling/git-test/compare/v0.1.8...v0.1.9) (2021-02-13)
 
 ### Bug Fixes
