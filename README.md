@@ -38,12 +38,6 @@ yarn commit
 
 [点击查看](./CHANGELOG.md)
 
-由 `conventional-changelog-cli` 自动生成，版本更新需要手动修改 `package.json` 的 `version` 值。
+使用 `standard-version` 生成提交日志、更新版本号。
 
-```
-npm run changelog
-
-yarn changelog
-```
-
-> 如果是工具库的日志，可以尝试 `standard-version`。
+`conventional-changelog-cli` 没有弄明白怎么更新当前的日志。
