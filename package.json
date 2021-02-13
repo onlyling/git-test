@@ -42,8 +42,12 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,yml,yaml,css,scss,less,ts,tsx,md}": [
-      "eslint --fix --ext",
+    "*.{js,jsx,json,yml,yaml,css,scss,less,ts,tsx,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,jsx,json,ts,tsx}": [
+      "eslint --fix",
       "prettier --write",
       "git add"
     ]
