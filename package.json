@@ -1,6 +1,6 @@
 {
   "name": "git-test",
-  "version": "0.2.4",
+  "version": "0.1.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,13 @@
     "prettier": "prettier --write 'src/**/*.{js,json,yml,yaml,css,scss,less,ts,tsx,md}'",
     "precommit": "lint-staged",
     "commit": "npx git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "changelog:first": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "version:patch": "npm version patch",
-    "version:minor": "npm version minor",
-    "version:major": "npm version major"
+    "release": "standard-version",
+    "release:major:pre": "standard-version --release-as major --prerelease rc --skip.changelog=true --skip.tag=true",
+    "release:major": "standard-version --release-as major",
+    "release:minor:pre": "standard-version --release-as minor --prerelease rc --skip.changelog=true --skip.tag=true",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch:pre": "standard-version --release-as patch --prerelease rc --skip.changelog=true --skip.tag=true",
+    "release:patch": "standard-version --release-as patch"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,6 @@
     "@typescript-eslint/parser": "^4.15.0",
     "commitizen": "^4.2.3",
     "commitlint-config-cz": "^0.13.2",
-    "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
@@ -39,6 +40,7 @@
     "husky": "^5.0.9",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
+    "standard-version": "^9.1.0",
     "typescript": "^4.1.5"
   },
   "husky": {
