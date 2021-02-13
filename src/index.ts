@@ -14,6 +14,6 @@ const version = '0.1.1';
 
 console.log(version);
 
-const version2 = '0.1.000';
+const version2 = '0.1.0011110';
 
 console.log(version);
