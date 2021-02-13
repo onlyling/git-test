@@ -13,3 +13,7 @@ console.log(text2);
 const version = '0.1.1';
 
 console.log(version);
+
+const version2 = '0.1.4';
+
+console.log(version);
